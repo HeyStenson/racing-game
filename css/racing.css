@@ -1,4 +1,4 @@
-.road, .inactive {
+.road {
 	width: 100px;
 	height: 100px;
 	border-top: 1px solid black;
@@ -10,3 +10,7 @@
 .active {
 	background-color: red;
 }
+
+/*.inactive {
+	background-color: blue;
+}*/
