@@ -33,7 +33,7 @@ div.player1, div.player2 {
 	border-left: 1px solid black;
 }
 
-.road:last-child {
+.player1 div:nth-child(13), .player2 div:nth-child(13) {
 	border-right: 1px solid black;
 }
 
