@@ -1,10 +1,21 @@
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+
+div.player1, div.player2 {
+	float: left;
+	clear: left;
+}
+
 .road {
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	background-color: grey;
 	float: left;
+	margin-top: 15px;
 	margin-bottom: 15px;
 }
 
