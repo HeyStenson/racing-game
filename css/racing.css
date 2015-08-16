@@ -1,6 +1,16 @@
+body {
+	font-family: sans-serif;
+}
+
 .wrapper {
-	width: 600px;
+	width: 610px;
 	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 85px;
+	margin-bottom: 10px;
 }
 
 div.player1, div.player2 {
