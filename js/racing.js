@@ -3,6 +3,13 @@ var player1 = 0;
 var player2 = 0;
 
 $(document).ready(function(){
+
+	$('.reset').on('click', function handleClick(event){
+		$('div').removeClass('active1 active2');
+		$('.player1 div:nth-child(2)').addClass('active1');
+		$('.player2 div:nth-child(2)').addClass('active2');
+	})
+
 	$(document).on('keypress', function onKeypress(event){
 		//if the key pressed is 'a'
 		if(event.which === 97){
@@ -23,16 +30,13 @@ $(document).ready(function(){
 		//post the winner -- runs too many times!
 		if (!$('div').hasClass('active1') && $('div').hasClass('active2')){
 			$('.player1').append('<p>Player 1 is the winner!</p>');
-			//how do I stop it after it's appended once?
+			//stop keypress function if player1 wins
+			$(document).off('keypress');
 		} else if ($('div').hasClass('active1') && !$('div').hasClass('active2')){
 			$('.player2').append('<p>Player 2 is the winner!</p>');
+			//stop keypress function if player2 wins
+			$(document).off('keypress');
 		}
 	});
-
-	$('.reset').on('click', function handleClick(event){
-		$('div').removeClass('active1 active2');
-		$('.player1 div:nth-child(2)').addClass('active1');
-		$('.player2 div:nth-child(2)').addClass('active2');
-	})
 })
 

@@ -29,7 +29,7 @@ div.player1, div.player2 {
 	margin-bottom: 15px;
 }
 
-.road:first-child {
+.player1 div:nth-child(2), .player2 div:nth-child(2) {
 	border-left: 1px solid black;
 }
 
