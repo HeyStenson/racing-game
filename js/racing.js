@@ -20,12 +20,19 @@ $(document).ready(function(){
 			player2++;
 		}	
 
+		//post the winner -- runs too many times!
 		if (!$('div').hasClass('active1') && $('div').hasClass('active2')){
 			$('.player1').append('<p>Player 1 is the winner!</p>');
+			//how do I stop it after it's appended once?
 		} else if ($('div').hasClass('active1') && !$('div').hasClass('active2')){
 			$('.player2').append('<p>Player 2 is the winner!</p>');
 		}
-
 	});
+
+	$('.reset').on('click', function handleClick(event){
+		$('div').removeClass('active1 active2');
+		$('.player1 div:nth-child(2)').addClass('active1');
+		$('.player2 div:nth-child(2)').addClass('active2');
+	})
 })
 
