@@ -5,12 +5,21 @@
 	border-bottom: 1px solid black;
 	background-color: grey;
 	float: left;
+	margin-bottom: 15px;
 }
 
-.active {
+.road:first-child {
+	border-left: 1px solid black;
+}
+
+.road:last-child {
+	border-right: 1px solid black;
+}
+
+.active1 {
 	background-color: red;
 }
 
-/*.inactive {
+.active2 {
 	background-color: blue;
-}*/
+}
