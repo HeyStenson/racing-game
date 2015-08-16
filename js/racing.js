@@ -10,12 +10,18 @@
 // 		}
 // 	});
 // })
+var count = 0;
+//since eq takes index as an argument, I probably need to set count equal to an index position?
 
 $(document).ready(function(){
 	$(document).on('keypress', function onKeypress(event){
 		
 		if(event.which === 97){
 			console.log("okay");
+			$('div').removeClass('active');
+			$('.road').eq(count + 1).addClass('active');
+			count++;
+			console.log(count);
 		}
 	});
 })
