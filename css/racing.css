@@ -29,11 +29,11 @@ div.player1, div.player2 {
 	margin-bottom: 15px;
 }
 
-.player1 div:nth-child(2), .player2 div:nth-child(2) {
+.player1 div:nth-child(3), .player2 div:nth-child(3) {
 	border-left: 1px solid black;
 }
 
-.player1 div:nth-child(13), .player2 div:nth-child(13) {
+.player1 div:nth-child(14), .player2 div:nth-child(14) {
 	border-right: 1px solid black;
 }
 
@@ -43,4 +43,15 @@ div.player1, div.player2 {
 
 .active2 {
 	background-color: blue;
+}
+
+.message {
+	font-weight: bold;
+}
+
+.reset {
+	width: 60px;
+	height: 30px;
+	padding: 5px;
+	text-align: center;
 }

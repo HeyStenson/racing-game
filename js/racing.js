@@ -4,6 +4,11 @@ var player2 = 0;
 
 $(document).ready(function(){
 
+	var name1 = prompt('Player 1, what is your name?').toUpperCase();
+	$('#name1').text(name1);
+	var name2 = prompt('Player 2, what is your name?').toUpperCase();
+	$('#name2').text(name2);
+
 	$(document).on('keypress', function onKeypress(event){
 		//if the key pressed is 'a'
 		if(event.which === 97){
@@ -23,11 +28,11 @@ $(document).ready(function(){
 
 		//post the winner 
 		if (!$('div').hasClass('active1') && $('div').hasClass('active2')){
-			$('.player1').append('<p class="message">Player 1 is the winner!</p>');
+			$('.player1').append('<p class="message">' + name1 + ' is the winner!</p>');
 			//stop keypress function if player1 wins
 			$(document).off('keypress');
 		} else if ($('div').hasClass('active1') && !$('div').hasClass('active2')){
-			$('.player2').append('<p class="message">Player 2 is the winner!</p>');
+			$('.player2').append('<p class="message">' + name2 + ' is the winner!</p>');
 			//stop keypress function if player2 wins
 			$(document).off('keypress');
 		}
@@ -38,8 +43,8 @@ $(document).ready(function(){
 			$('.message').remove();
 			player1 = 0;
 			player2 = 0;
-			$('.player1 div:nth-child(2)').addClass('active1');
-			$('.player2 div:nth-child(2)').addClass('active2');
+			$('.player1 div:nth-child(3)').addClass('active1');
+			$('.player2 div:nth-child(3)').addClass('active2');
 		})
 
 })
