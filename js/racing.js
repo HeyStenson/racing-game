@@ -37,15 +37,11 @@ $(document).ready(function(){
 			$(document).off('keypress');
 		}
 	})
+		
+		$('.reset').click(function(){
+			location.reload();
+		});
 
-		$('.reset').on('click', function handleClick(event){
-			$('div').removeClass('active1 active2');
-			$('.message').remove();
-			player1 = 0;
-			player2 = 0;
-			$('.player1 div:nth-child(3)').addClass('active1');
-			$('.player2 div:nth-child(3)').addClass('active2');
-		})
 
 })
 

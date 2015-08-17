@@ -49,7 +49,7 @@ div.player1, div.player2 {
 	font-weight: bold;
 }
 
-.reset {
+button {
 	width: 60px;
 	height: 30px;
 	padding: 5px;
