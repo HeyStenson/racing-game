@@ -20,7 +20,7 @@ $(document).ready(function(){
 	var name2 = prompt('Player 2, what is your name?').toUpperCase();
 	$('#name2').text(name2);
 
-	$(document).on('keypress', function onKeypress(event){
+	$(document).on('keypress', function(event){
 		//if the key pressed is 'a'
 		if(event.which === aKey){
 			//remove the class active1 from the div, then add it to the next div with class of road in the player1 div
