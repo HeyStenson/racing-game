@@ -29,13 +29,13 @@ div.player1, div.player2 {
 	margin-bottom: 15px;
 }
 
-.player1 div:nth-child(3), .player2 div:nth-child(3) {
+/*.player1 div:nth-child(3), .player2 div:nth-child(3) {
 	border-left: 1px solid black;
 }
 
 .player1 div:nth-child(14), .player2 div:nth-child(14) {
 	border-right: 1px solid black;
-}
+}*/
 
 .active1 {
 	background-color: red;
