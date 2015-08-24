@@ -7,10 +7,10 @@ var divs = 12;
 
 function Game() {
   //Create a new instance of player 1
-  this.player1 = new Player("Player 1");
+  this.player1 = new Player("Player 1", aKey);
 
   //Do the same for a player 2
-  this.player2 = new Player("Player 2");
+  this.player2 = new Player("Player 2", lKey);
 }
 
 // `Game.prototype.init` kicks off a new game with a board and two players
